@@ -4,7 +4,7 @@ Um projeto de estudos de e-commerce chamado **PetShop** usando uma API falsa, on
 
 ## Funcionalidades
 
--- **Página Inicial**: A home exibe uma grade de produtos disponíveis, permitindo que os usuários visualizem rapidamente o que está à venda.  
+- **Página Inicial**: A home exibe uma grade de produtos disponíveis, permitindo que os usuários visualizem rapidamente o que está à venda.  
   
 - **Detalhes do Produto**: Ao clicar em um produto, o usuário é redirecionado para uma página de descrição detalhada, que fornece informações adicionais sobre o item, os usuários podem adicionar produtos ao carrinho clicando no botão de compra.
 
