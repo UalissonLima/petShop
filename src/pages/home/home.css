@@ -1,0 +1,72 @@
+.containerPrincipal {
+    margin: 50px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+.containerPrincipal h1 {
+    display: flex;
+    width: 65%;
+    margin: 50px 0px;
+    border-bottom: 4px solid black;
+    text-align: justify;
+    padding-bottom: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.containerCatalogo {
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+}
+
+.containerProduto {
+    width: 185px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    box-shadow: 0px -1px 8px 3px #b2a6a64b;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.containerProduto img {
+    background-color: yellow;
+    width: 100%;
+    height: 160px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.containerProduto p {
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0px 8px;
+}
+
+.containerProduto strong {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerPropaganda {
+    background-color: rebeccapurple;
+    width: 35%;
+    background-image: url('/src/assets/racao-especial.jpg');
+    background-size: cover;
+    background-clip: border-box;
+    border-radius: 10px 0px 10px 10px;
+}

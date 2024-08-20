@@ -1,0 +1,86 @@
+.containerPrincipal {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    height: 100%;
+}
+
+
+.containerCarrinho {
+    width: 100%;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.tituloProduto {
+    background-color: rgba(144, 218, 117, 0.721);
+    width: 90%;
+    height: 5%;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(75, 74, 74);
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.containerProduto {
+    height: 40%;
+    width: 90%;
+}
+
+.faixaProduto {
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: #a8c5a5b5;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.faixaProduto img {
+    height: 100%;
+    border-radius: 40px;
+}
+
+.containerBtnsQnt {
+    width: 10%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.btnQnt {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgb(75, 74, 74);
+}
+
+.containerPreco {
+    width: 10%;
+    font-size: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.containerTotal {
+    padding: 10px;
+    height: 100%;
+    width: 90%;
+    background-color: #a8c5a5b5;
+    display: flex;
+    justify-content: end;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+}

@@ -1,0 +1,39 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Ração para Cachorro Pedigree Raças Pequenas 10,1Kg",
+            "subtitle": "Pedigree com Fortivil: uma combinação cientificamente balanceada de multi-nutrientes e óleo de girassol, que ajuda a manter os cães sempre saudáveisÓleo de Girassol: rico em ácidos graxos (ômega - 3), que promovem maciez e brilho aos pêlosZinco: Essencial para a manutenção de uma pele saudávelVitaminas do complexo B: garantem o excelente crescimento dos pêlosBiotina: promovem uma perfeita renovação dos pêlosVitamina E: garante uma vida longa aos cãeslevedura de cerveja: fonte de vitaminas do complexo B, que mantém os pêlos sedosos e brilhantesDiferença percebida em até 8 semanas",
+            "price": 135.90,
+            "cover": "https://imgs.casasbahia.com.br/1523140742/1xg.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Ração Golden Fórmula Cães Adultos Raças Pequenas Frango e Arroz Mini Bits 1 kg",
+            "subtitle": " Ração Golden Raças Pequenas para cães adultos sabor frango e arroz Mini Bits é ideal para raças de cachorros adultos de pequeno porte. Seus grãos de tamanho reduzido facilitam a mastigação e a deglutição do alimento por parte do seu animal de estimação.",
+            "price": 21.90,
+            "cover": "https://cobasi.vteximg.com.br/arquivos/ids/939211/racao-golden-formula-caes-adultos-racas-pequenas-frango-arroz-mini-bits-3626279-1kg-lado.jpg?v=638127640564670000"
+        },
+        {
+            "id": 3,
+            "title": "Ração Seca Origens Class Carne e Frango para Cães Adultos",
+            "subtitle": "A Ração Seca Origens Premium Especial Class Carne e Frango para Cães Adultos é uma linha de alimentos Premium Especial que oferece a melhor nutrição para seu pet, aumentando a absorção e aproveitamento dos nutrientes.",
+            "price": 173.61,
+            "cover": "https://cobasi.vteximg.com.br/arquivos/ids/1015972-368-368/racao-origens-class-caes-adultos-carne-e-frango-principal.jpg?v=638012862916900000"
+        },
+        {
+            "id": 4,
+            "title": "Ração Cachorro Quatree Gourmet Raças Pequenas Adulto 10,1Kg",
+            "subtitle": "A Ração Cachorro Quatree Gourmet e indicado para os cães de raças Pequenas Adulto. Sua composição e extremamente rica em proteínas de origem animal. Proteínas de alta qualidade e ômegas 3 e 6, ingredientes que proporcionam maior digestibilidade e pelagem bonita e saudável.",
+            "price": 126.99,
+            "cover": "https://farmaciaindiana.vtexassets.com/arquivos/ids/279696/Racao-Cachorro-Quatree-Gourmet-Racas-Pequenas-Adulto-101Kg-1-ok.jpg?v=638228893133500000"
+        },
+        {
+            "id": 5,
+            "title": "Ração para Cachorro Pedigree Premium Filhotes Raças Médias e Grandes 10,1kg",
+            "subtitle": "Alimento seco para cães filhotes, 100% completo e balanceado para o correto desenvolvimento dos ossos, dentes e músculos. Preparado com Carne Fresca, mais proteínas e carboidratos e no tamanho ideal para facilitar a mastigação de cães filhotes.",
+            "price": 126.99,
+            "cover": "https://static1.efacil.com.br/wcsstore/ExtendedSitesCatalogAssetStore/Imagens/360/700770_01.jpg"
+        }
+    ]
+}
