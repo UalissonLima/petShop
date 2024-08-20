@@ -3,6 +3,7 @@ import Home from "./pages/home";
 import Layout from "./components/layout";
 import Descricao from "./pages/descricao";
 import Carrinho from "./pages/carrinho";
+import NotFound from "./pages/notFound";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "carrinho",
         element: <Carrinho></Carrinho>,
+      },
+      {
+        path: "*",
+        element: <NotFound></NotFound>,
       },
     ],
   },

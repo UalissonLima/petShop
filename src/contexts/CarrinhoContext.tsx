@@ -8,6 +8,7 @@ interface CarrinhoContextoData {
   carrinho: CarrinhoProps[];
   carrinhoQuantidade: number;
   total: string;
+  removeProdutoCarrinho: (produto: CarrinhoProps) => void;
 }
 
 export interface CarrinhoProps {
@@ -57,6 +58,25 @@ function CarrinhoProvider({ children }: CarrinhoProviderProps) {
     }
   }
 
+  function removeProdutoCarrinho(produto: CarrinhoProps) {
+    const indexProduto = carrinho.findIndex((item) => item.id === produto.id);
+
+    if (indexProduto !== -1) {
+      if (carrinho[indexProduto].quantidade > 1) {
+        const listaCarrinho = [...carrinho];
+        listaCarrinho[indexProduto].quantidade -= 1;
+        listaCarrinho[indexProduto].total =
+          listaCarrinho[indexProduto].quantidade *
+          listaCarrinho[indexProduto].price;
+        setCarrinho(listaCarrinho);
+      } else {
+        const removeProduto = carrinho.filter((item) => item.id !== produto.id);
+        setCarrinho(removeProduto);
+      }
+      totalCarrinho(carrinho);
+    }
+  }
+
   function totalCarrinho(produto: CarrinhoProps[]) {
     const resultado = produto.reduce((acc, obj) => acc + obj.total, 0);
 
@@ -81,6 +101,7 @@ function CarrinhoProvider({ children }: CarrinhoProviderProps) {
         carrinho,
         carrinhoQuantidade: carrinho.length,
         total,
+        removeProdutoCarrinho,
       }}
     >
       {children}

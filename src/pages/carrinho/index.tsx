@@ -8,7 +8,8 @@ import { useContext, useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 
 export default function Carrinho() {
-  const { addProdutoCarrinho, carrinho, total } = useContext(CarrinhoContexto);
+  const { addProdutoCarrinho, carrinho, total, removeProdutoCarrinho } =
+    useContext(CarrinhoContexto);
 
   const [produtosCarrinho, setProdutoCarrinho] = useState<CarrinhoProps[]>([]);
   const [temProduto, setTemProduto] = useState(false);
@@ -27,12 +28,12 @@ export default function Carrinho() {
     }
   }
 
-  function confimaCompra(){
+  function confimaCompra() {
     toast.success("Parabéns! Você confirmou sua compra", {
       position: "bottom-center",
       autoClose: 5000,
-      className: 'toast-custom'
-    })
+      className: "toast-custom",
+    });
   }
 
   return (
@@ -54,7 +55,12 @@ export default function Carrinho() {
                     +
                   </button>
                   {produto.quantidade}
-                  <button className={styles.btnQnt}>-</button>
+                  <button
+                    className={styles.btnQnt}
+                    onClick={() => removeProdutoCarrinho(produto)}
+                  >
+                    -
+                  </button>
                 </div>
 
                 <div className={styles.containerPreco}>
@@ -67,7 +73,10 @@ export default function Carrinho() {
             </div>
           ))}
           <section className={styles.containerTotal}>
-            <button className={styles.BtnConfirmaCompra} onClick={confimaCompra}>
+            <button
+              className={styles.BtnConfirmaCompra}
+              onClick={confimaCompra}
+            >
               CONFIRMAR COMPRA
             </button>
             {total}

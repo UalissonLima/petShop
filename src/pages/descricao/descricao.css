@@ -42,7 +42,7 @@
     line-height: 25px;
 }
 
-.containerTxtDescricao H4 {
+.containerTxtDescricao h4 {
     margin-bottom: 10px;
     text-align: left;
     font-size: 30px;
@@ -68,4 +68,157 @@
     background-color: #22391e;
     color: aliceblue;
     transform: scale(1.1);
+}
+
+/* Celulares pequenos */
+@media only screen and (max-width: 320px) {
+    .containerDescricaoPrincipal {
+        height: fit-content;
+        margin: 10px;
+    }
+
+    .containerProdutoDescricao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerImgDescricao {
+        margin: 20px;
+        margin-bottom: 0px;
+        width: 85%;
+        height: 250px;
+    }
+
+    .containerTxtDescricao {
+        width: fit-content;
+        margin: 20px;
+        position: relative;
+        align-items: center;
+    }
+
+    .containerTxtDescricao h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .containerTxtDescricao p {
+        margin-bottom: 10px;
+        text-align: justify;
+        width: 100%;
+        font-size: 14px;
+        margin-top: 150px;
+    }
+
+    .containerTxtDescricao h4 {
+
+        text-align: center;
+        font-size: 30px;
+        position: absolute;
+        top: 120px;
+    }
+
+    .containerBtnDescricao {
+        width: 70%;
+        font-size: 11px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 170px;
+    }
+}
+
+/* Celulares */
+@media only screen and (min-width: 321px) and (max-width: 767px) {
+    .containerDescricaoPrincipal {
+        height: fit-content;
+        margin: 10px;
+    }
+
+    .containerProdutoDescricao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerImgDescricao {
+        margin: 20px;
+        width: 90%;
+        height: 350px;
+    }
+
+    .containerTxtDescricao {
+        width: fit-content;
+        margin: 20px;
+    }
+
+    .containerTxtDescricao h1 {
+        font-size: 20px;
+        text-align: start;
+    }
+
+    .containerTxtDescricao p {
+        margin-bottom: 10px;
+        text-align: justify;
+        width: 100%;
+    }
+
+    .containerTxtDescricao h4 {
+        margin: 20px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .containerBtnDescricao {
+        width: 100%;
+        font-size: 15px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .containerDescricaoPrincipal {
+        height: fit-content;
+        margin: 10px;
+    }
+
+    .containerProdutoDescricao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerImgDescricao {
+        margin: 20px;
+        width: 90%;
+        height: 500px;
+    }
+
+    .containerTxtDescricao {
+        width: fit-content;
+        margin: 40px;
+        margin-top: 0px;
+    }
+
+    .containerTxtDescricao h1 {
+        font-size: 25px;
+        text-align: start;
+    }
+
+    .containerTxtDescricao p {
+        margin-bottom: 10px;
+        text-align: justify;
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .containerTxtDescricao h4 {
+        margin: 20px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .containerBtnDescricao {
+        width: 70%;
+        justify-content: center;
+        gap: 20px;
+    }
 }

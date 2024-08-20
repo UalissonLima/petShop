@@ -41,7 +41,6 @@ main {
 }
 
 .containerProduto img {
-    background-color: yellow;
     width: 100%;
     height: 160px;
     border-radius: 10px 10px 0px 0px;
@@ -63,10 +62,138 @@ main {
 }
 
 .containerPropaganda {
-    background-color: rebeccapurple;
     width: 35%;
     background-image: url('/src/assets/racao-especial.jpg');
     background-size: cover;
     background-clip: border-box;
     border-radius: 10px 0px 10px 10px;
+}
+
+
+@media only screen and (max-width: 320px) {
+    .containerPrincipal {
+        margin: 10px;
+    }
+
+    .containerPrincipal h1 {
+        width: fit-content;
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+    }
+
+    .containerCatalogo {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        width: 100%;
+        margin-bottom: 50px;
+        gap: 10px;
+    }
+
+    .containerProduto {
+        width: 160px;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: none;
+        margin: none;
+        flex-direction: column;
+    }
+
+    .containerPropaganda {
+        height: 300px;
+        width: 100%;
+    }
+
+    .containerProduto p {
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+/* Celulares */
+@media only screen and (min-width: 321px) and (max-width: 767px) {
+    .containerPrincipal {
+        margin: 10px;
+    }
+
+    .containerPrincipal h1 {
+        width: fit-content;
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+    }
+
+    .containerCatalogo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+        margin-bottom: 50px;
+        gap: 10px;
+    }
+
+    .containerProduto {
+        width: 160px;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: none;
+        margin: none;
+        flex-direction: column;
+    }
+
+    .containerPropaganda {
+        height: 300px;
+        width: 100%;
+
+    }
+
+    .containerProduto p {
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .containerPrincipal {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerPrincipal h1 {
+        width: fit-content;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        border-bottom: 4px solid black;
+    }
+
+    .containerCatalogo {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    main {
+        padding: none;
+        margin: none;
+        flex-direction: column;
+    }
+
+    .containerPropaganda {
+        height: 300px;
+        width: 100%;
+
+    }
+
+    .containerProduto p {
+        font-weight: bold;
+        font-size: 20px;
+    }
 }

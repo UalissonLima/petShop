@@ -1,50 +1,11 @@
-# React + TypeScript + Vite
+# PetShop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um projeto de estudos de e-commerce chamado **PetShop**, onde os usuários podem navegar por  produtos para pets, visualizar suas descrições, adicionar itens ao carrinho e verificar suas compras.  
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-- **Página Inicial**: A home exibe uma grade de produtos disponíveis, permitindo que os usuários visualizem rapidamente o que está à venda.  
+  
+- **Detalhes do Produto**: Ao clicar em um produto, o usuário é redirecionado para uma página de descrição detalhada, que fornece informações adicionais sobre o item, os usuários podem adicionar produtos ao carrinho clicando no botão de compra.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **Carrinho de Compras**: Atualiza automaticamente a quantidade e o valor total dos itens no carrinho. A página do carrinho exibe todos os itens que o usuário adicionou, mostrando a quantidade e o valor de cada produto. Se não houver itens no carrinho, uma mensagem informativa é exibida, informando que não há itens adicionados.  
