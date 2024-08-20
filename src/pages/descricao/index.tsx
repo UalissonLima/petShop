@@ -3,6 +3,8 @@ import { useContext, useEffect, useState } from "react";
 import { ProdutosProps } from "../home";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import "./descricao.css";
+import "react-toastify/dist/ReactToastify.css";
+import { toast, ToastContainer } from "react-toastify";
 
 export default function Descricao() {
   const { produtoDescricao, addProdutoCarrinho } = useContext(CarrinhoContexto);
@@ -14,6 +16,15 @@ export default function Descricao() {
 
   function handleCarrinho(produto: ProdutosProps) {
     addProdutoCarrinho(produto);
+    mostrarToast();
+  }
+
+  function mostrarToast() {
+    toast.success("Adicionado ao carrinho", {
+      position: "top-center",
+      autoClose: 2000,
+      closeOnClick: true,
+    });
   }
 
   return (
@@ -44,6 +55,7 @@ export default function Descricao() {
           </div>
         </section>
       ))}
+      <ToastContainer></ToastContainer>
     </div>
   );
 }

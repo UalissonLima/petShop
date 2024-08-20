@@ -1,86 +1,127 @@
 .containerPrincipal {
-    display: flex;
-    flex-direction: column;
-    margin: 50px;
-    height: 100%;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
 }
 
-
 .containerCarrinho {
-    width: 100%;
-    height: 225px;
-    display: flex;
-    flex-direction: column;
+    background-color: #b6c4b4;
+    margin-bottom: 1%;
     border-radius: 10px;
-    align-items: center;
 }
 
 .tituloProduto {
-    background-color: rgba(144, 218, 117, 0.721);
-    width: 90%;
-    height: 5%;
-    font-size: 15px;
-    font-weight: bold;
-    border-bottom: 1px solid rgb(75, 74, 74);
-    border-radius: 10px 10px 0px 0px;
-    padding: 10px;
+    background-color: #62875d;
     display: flex;
-    align-items: center;
-}
-
-.containerProduto {
-    height: 40%;
-    width: 90%;
+    font-weight: bold;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .faixaProduto {
-    padding: 10px;
-    height: 100%;
-    width: 100%;
-    background-color: #a8c5a5b5;
     display: flex;
     justify-content: space-between;
-    border-radius: 0px 0px 10px 10px;
 }
 
 .faixaProduto img {
-    height: 100%;
-    border-radius: 40px;
+    width: 125px;
+    margin: 10px;
+    border-radius: 30px;
 }
 
 .containerBtnsQnt {
-    width: 10%;
-    font-size: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 10px;
     align-items: center;
-    gap: 8px;
+    font-size: 20px;
+    margin: 10px;
+    user-select: none;  
 }
 
 .btnQnt {
-    cursor: pointer;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid gray;
     border-radius: 50%;
-    background-color: transparent;
-    border: 1px solid rgb(75, 74, 74);
+    background-color: rgb(195, 182, 166);
+    font-size: 20px;
 }
 
 .containerPreco {
-    width: 10%;
+    user-select: none;  
     font-size: 20px;
     display: flex;
-    justify-content: end;
     align-items: center;
+    justify-content: end;
+    gap: 10px;
+    margin: 10px;
 }
 
 .containerTotal {
+    background-color: #8a8787;
+    border-radius: 10px;
+    min-height: 50px;
     padding: 10px;
-    height: 100%;
-    width: 90%;
-    background-color: #a8c5a5b5;
     display: flex;
     justify-content: end;
-    margin: auto;
-    border-radius: 0px 0px 10px 10px;
+    font-size: 20px;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 5px inset rgb(74, 73, 73);
 }
+
+.BtnConfirmaCompra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #2f6827;
+    font-weight: bold;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.BtnConfirmaCompra:hover {
+    background-color: #38ce24;
+    color: black;
+    border: 2px solid white;
+}
+
+.containerVazio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    padding: 30px;
+}
+
+.containerVazio section {
+    margin: 30px
+}
+
+.BtnVerProdutos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+    padding: 10px;
+    border: 3px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #74C966;
+}
+
+.toast-custom {  
+    width: 600px;
+    height: 500px;
+    font-size: 25px;   
+    text-align: center; 
+  }  
